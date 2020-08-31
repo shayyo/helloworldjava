@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'myrepo', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/tmp', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
                 echo 'Deploying....'
             }
         }
