@@ -9,13 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                f=isUnix()
-                echo "${f}"
                 echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'myrepo', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
                 echo 'Deploying....'
             }
         }
