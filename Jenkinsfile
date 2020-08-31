@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo isUnix()
+                f=isUnix()
+                echo "${f}"
                 echo 'Testing..'
             }
         }
