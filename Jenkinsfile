@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                pwd()
+                echo 'pwd()'
                 echo 'Deploying....'
             }
         }
