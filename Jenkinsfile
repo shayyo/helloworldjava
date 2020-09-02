@@ -14,8 +14,6 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                var=pwd()
-                echo $var
                 echo 'Deploying....'
             }
         }
