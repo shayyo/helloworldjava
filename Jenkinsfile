@@ -20,6 +20,7 @@ pipeline {
         stage('Run BASH script') {
             steps {
                 sh "#!/bin/bash \n" +
+                    "cd /tmp \n" +
                     "./ssh.sh"
             }
         }
