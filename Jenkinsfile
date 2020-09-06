@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh "#!/bin/bash \n" +
                     "cd /tmp \n" +
-                    "echo $PWD \n" +
+                    "echo \"current dir is: $PWD\" \n" +
                     "./ssh.sh"
             }
         }
