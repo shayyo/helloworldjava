@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Run BASH script') {
             steps {
-                bash '''#!/bin/bash
+                bash #!/bin/bash
                 echo "hello world" 
             }
         }
