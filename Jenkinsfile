@@ -20,7 +20,7 @@ pipeline {
         stage('Run BASH script') {
             steps {
                 sh "#!/bin/bash \n" +
-                    "echo \"hello from $HOSTNAME\"" +
+                    "echo \"hello from $SHELL\"" +
             }
         }
     }
