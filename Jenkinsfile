@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh "#!/bin/bash \n" +
                     "echo \"hello from $SHELL\"" +
-                    hostname
+                    "echo $HOSTNAME"
             }
         }
     }
