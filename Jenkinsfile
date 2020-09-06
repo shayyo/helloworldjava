@@ -22,6 +22,7 @@ pipeline {
                 sh "#!/bin/bash \n" +
                     "echo \"current dir is: $PWD\" \n" +
                     "ls \n" +
+                    "sleep 30 \n" +
                     "cd / \n" +
                     "echo \"current dir is: $PWD\" \n" +
                     "./ssh.sh"
