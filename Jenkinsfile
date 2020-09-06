@@ -22,7 +22,9 @@ pipeline {
                 sh "#!/bin/bash \n" +
                     "echo \"current dir is: $PWD\" \n" +
                     "cp /tmp/sss.sh . \n" +
-                    "cat sss.sh"
+                    "cat sss.sh \n" +
+                    "chmod u+x bash_script.sh \n" +
+                    "./bash_script.sh \n"
             }
         }
     }
