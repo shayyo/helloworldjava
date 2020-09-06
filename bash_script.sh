@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-echo $SHELL
+echo "This is your shell: ${SHELL}"
+echo "This is a new line"
