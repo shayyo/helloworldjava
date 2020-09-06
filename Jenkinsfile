@@ -21,6 +21,7 @@ pipeline {
             steps {
                 sh "#!/bin/bash \n" +
                     "cd /tmp \n" +
+                    "echo $PWD \n" +
                     "./ssh.sh"
             }
         }
