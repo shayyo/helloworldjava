@@ -2,5 +2,5 @@
 
 echo "This is your shell: ${SHELL}"
 echo "This is a new line"
-sleep 300
+sleep 3
 exit 0
