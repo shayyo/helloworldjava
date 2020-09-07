@@ -2,4 +2,4 @@
 
 echo "This is your shell: ${SHELL}"
 echo "This is a new line"
-exit 0
+exit 1
