@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'ifconfig'
+                sh 'yum update'
             }
         }
     }
