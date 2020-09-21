@@ -1,27 +1,11 @@
 pipeline {
-    agent any
-
+    agent {
+        docker { image 'node:14-alpine' }
+    }
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
         stage('Test') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-        stage('Run BASH script') {
-            steps {
-                sh "#!/bin/bash \n" +
-                    "chmod u+x bash_script.sh \n" +
-                    "./bash_script.sh \n"
+                sh 'node --version'
             }
         }
     }
