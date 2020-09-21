@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'yum install -y net-tools'
                 sh 'ifconfig'
+                sh 'hostname'
             }
         }
     }
