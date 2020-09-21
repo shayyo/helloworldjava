@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'centos:latest' }
+        docker { image 'centos_jenkins:latest' }
     }
     stages {
         stage('Test') {
