@@ -1,13 +1,13 @@
 pipeline {
     agent {
-        docker { image 'node:14-alpine' }
+        docker { image 'centos:latest' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
                 sh 'ifconfig'
-                sh 'yum update'
+                sh 'yum install -y net-tools'
+                sh 'ifconfig'
             }
         }
     }
