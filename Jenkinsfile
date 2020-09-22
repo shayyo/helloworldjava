@@ -10,5 +10,10 @@ pipeline {
                 sh 'echo ${my_variable}'
             }
         }
+        stage('Print environment variable') {
+            steps {
+                sh 'printenv'
+            }
+        }
     }
 }
