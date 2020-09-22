@@ -8,6 +8,7 @@ pipeline {
                 sh 'ifconfig'
                 sh 'hostname'
                 sh 'echo ${my_variable}'
+                sh 'env'
             }
         }
         stage('Print environment variable') {
