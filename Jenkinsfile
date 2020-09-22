@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Print environment variable') {
             steps {
-                sh 'printenv'
+                sh 'env'
             }
         }
     }
