@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Print environment variable') {
             steps {
-                sh 'env'
+                sh 'echo "I can access $BUILD_NUMBER in shell command as well."'
             }
         }
     }
