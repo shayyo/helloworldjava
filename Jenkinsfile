@@ -9,6 +9,7 @@ pipeline {
                 sh 'hostname'
                 sh 'echo ${my_variable}'
                 sh 'env'
+                sh sleep 60
             }
         }
         stage('Print environment variable') {
